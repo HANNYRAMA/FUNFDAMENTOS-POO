@@ -1,0 +1,14 @@
+/**
+*UPTX - Fundamentos de POO
+*Practica 1 Gruepo:5-i
+*Objetivo: Mi primer programa
+*Integrantes:Hanny Iraiz Rama Perez
+*Modificacion 10/01/2024
+*/
+public class Main[
+public class Main{
+public static main(string[] args){
+//mensaje de salida de bienvenida
+System.out.prinft("Bienvenido al facinante mundo de Java");
+}
+}
