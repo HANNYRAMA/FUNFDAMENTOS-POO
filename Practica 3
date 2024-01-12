@@ -1,0 +1,37 @@
+//Particpantes:
+//Hanny Iraiz Rama Perez
+//Alan Vazquez Garcia
+//Adrian Laguna Rodriguez
+//Emmanuel Romero Guzman
+//Grupo: 5to I
+//objetivo: ejecutar el programa
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int numint;
+        double numdbl, res1, res2, res3, res4, res5, res6;
+//mensaje de bienvenida
+        System.out.printf("Bienvenidos, favor de seguir las instrucciones \n");
+//crear objeto
+        Scanner scanner = new Scanner(System.in);
+//Mensajes, instrucciones a seguir para el usuario
+        System.out.printf("\n Digite un numero entero ");
+//leer datos ingresados desde teclado
+        numint = scanner.nextInt();
+        System.out.printf("\n Digite un numero decimal ");
+        //menu de Operaciones que realizara el programa
+        numdbl = scanner.nextDouble();
+        res1 = numdbl + numint;
+        res2 = numint / (int)numdbl;//redondea los resultados decimales a enteros
+        res3 = numint / numdbl;
+        res4 = numdbl / numint;
+        res5 = (int)numdbl / numint;//cambia el numero decimal al numero entero mas cercano
+        res6 = (int)numint + numdbl;//se crea una redondancia porque el tipo de dato ya es entero
+        System.out.printf("el valor de la operacion 1= " + res1);
+        System.out.printf("\nel valor de la operacion 2= " + res2);
+        System.out.printf("\nel valor de la operacion 3= " + res3);
+        System.out.printf("\nel valor de la operacion 4= " + res4);
+        System.out.printf("\nel valor de la operacion 5= " + res5);
+        System.out.printf("\nel valor de la operacion 6= " + res6);
+    }
+}
