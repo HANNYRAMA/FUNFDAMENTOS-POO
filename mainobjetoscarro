@@ -1,0 +1,40 @@
+import FPOO.Carro;
+/*UPTX - TI
+Fundamentos de programación OO
+Practica
+Objetivo: Realizar el diseño UML de la clase Carro y diseño UML del los objetos
+de prueba, donde se observe al menos dos tipos de sobrecarga y el
+conteo de los objetos creados.
+Programadores: Hanny Iraiz Rama Perez
+Modificación: 19/01/2024
+Matricula:2231123449
+*/
+public class maincarro {
+    public static void main(String[] args) {
+        Carro objeto1 = new Carro("Toyota", "Corolla", 2020, 1000);
+        Carro objeto2 = new Carro("Ford", "Mustang", 2018, 100);
+        Carro objeto3 = new Carro("Chevrolet", "Camaro", 2019, 2000);
+
+        // Imprimir los atributos de cada objeto
+        System.out.println("Objeto 1:");
+        System.out.println("Marca: " + objeto1.getMarca());
+        System.out.println("Modelo: " + objeto1.getModelo());
+        System.out.println("Año: " + objeto1.getAnio());
+        System.out.println("Velocidad: " + objeto1.getVelocidadActual());
+
+        System.out.println("\nObjeto 2:");
+        System.out.println("Marca: " + objeto2.getMarca());
+        System.out.println("Modelo: " + objeto2.getModelo());
+        System.out.println("Año: " + objeto2.getAnio());
+        System.out.println("Color: " + objeto2.getVelocidadActual());
+
+        System.out.println("\nObjeto 3:");
+        System.out.println("Marca: " + objeto3.getMarca());
+        System.out.println("Modelo: " + objeto3.getModelo());
+        System.out.println("Año: " + objeto3.getAnio());
+        System.out.println("Color: " + objeto3.getVelocidadActual());
+
+        // Imprimir la cantidad de objetos creados
+        System.out.println("\nCantidad de objetos creados: "+Carro.getNumCoche());
+}
+}
