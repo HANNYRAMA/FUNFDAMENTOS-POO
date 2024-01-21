@@ -1,0 +1,80 @@
+package FPOO;
+/*UPTX - TI
+Fundamentos de programación OO
+Practica
+Objetivo: Realizar el diseño UML de la clase Carro y diseño UML del los objetos
+de prueba, donde se observe al menos dos tipos de sobrecarga y el
+conteo de los objetos creados.
+Programadores: Hanny Iraiz Rama Perez
+Modificación: 19/01/2024
+Matricula:2231123449
+*/
+public class Carro{
+    //Atributos
+    private String marca;
+    private String modelo;
+    private int anio;
+    private int velocidadActual;
+    private static int numCoche=0;//atributo estatico que cuenta el numero de objetos
+
+    /*constructores
+    Inicializa los atributos con valores predeterminados
+    y llama al método contarCoche() para incrementar el
+    contador de objetos Carro.*/
+    public Carro(){
+        marca="";
+        modelo="";
+        anio=0;
+        velocidadActual=0;
+        contarCoche();
+    }
+    public Carro(String marca,String modelo, int anio, int velocidadActual){
+        this.marca=marca;
+        this.modelo=modelo;
+        this.anio=anio;
+        this.velocidadActual=velocidadActual;
+        contarCoche();
+    }
+    //metodos
+    static void contarCoche(){
+        numCoche++;
+    }
+
+    public static int getNumCoche() {
+        return numCoche;
+    }
+    //Método estático que incrementa el contador numCoche cada
+    // vez que se crea un nuevo objeto Carro.
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
+    public int getVelocidadActual() {
+        return velocidadActual;
+    }
+
+    public void setVelocidadActual(int velocidadActual) {
+        this.velocidadActual = velocidadActual;
+    }
+}
