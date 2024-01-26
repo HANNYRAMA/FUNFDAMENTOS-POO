@@ -1,0 +1,53 @@
+/*UPTX - TI
+Fundamentos de programación OO
+Practica
+Objetivo: Realizar el diseño de un conversor de temperatura.
+Programadores: Hanny Iraiz Rama Perez
+Modificación: 19/01/2024
+Matricula:2231123449
+*/
+import java.util.Scanner;
+public class MainTem {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);//aqui se crea una ionstancia para leer desde teclado
+        //Se crea una instancia de la clase Temperatura
+        Temperatura temperatura = new Temperatura();
+        int opcion;//variable para iniciar con el menu
+        do {
+            //Opciones del menu
+            System.out.println("----- Menú de Temperaturas -----");
+            System.out.println("1. Convertir de Celsius a Fahrenheit");
+            System.out.println("2. Convertir de Fahrenheit a Celsius");
+            System.out.println("3. Salir");
+            System.out.print("Ingrese una opción: ");
+            opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.print("Ingrese la temperatura en Celsius: ");
+                    double celsius = scanner.nextDouble();
+                    temperatura.setCelsius(celsius);
+                    System.out.println("Temperatura en Fahrenheit: " + temperatura.getFarenheit());
+                    break;
+                case 2:
+                    System.out.print("Ingrese la temperatura en Fahrenheit: ");
+                    double fahrenheit = scanner.nextDouble();
+                    temperatura.setFarenheit(fahrenheit);
+                    System.out.println("Temperatura en Celsius: " + temperatura.getCelsius());
+                    break;
+                case 3:
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción inválida. Por favor, ingrese una opción válida.");
+                    break;
+            }
+
+            System.out.println();
+        } while (opcion != 3);
+
+        scanner.close();
+    }
+
+            }
+
