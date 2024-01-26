@@ -1,0 +1,26 @@
+/*UPTX - TI
+Fundamentos de programación OO
+Practica
+Objetivo: Realizar el diseño de un conversor de temperatura.
+Programadores: Hanny Iraiz Rama Perez
+Modificación: 19/01/2024
+Matricula:2231123449
+*/
+public class prueba {
+    public static void main(String[ ] args) {
+        //Mandamos valores a la clase temperatura
+        //objetos para prueba
+       Temperatura prueba1= new Temperatura();
+        prueba1.setCelsius(100);
+        prueba1.setFarenheit(212);
+        Temperatura prueba2= new Temperatura();
+        prueba2.setCelsius(89);
+        prueba2.setFarenheit(192.2);
+        //imprimir valores
+        System.out.println("en la prueba 1 los datos son \n " + prueba1.getFarenheit()+" grados F");
+        System.out.println(prueba1.getCelsius()+" grados C");
+        System.out.println("en la prueba 2 los datos son\n" + prueba2.getFarenheit()+"grados F");
+        System.out.println(prueba2.getCelsius()+"grados C");
+    }
+
+}
